@@ -1,6 +1,4 @@
-const zmq = require("zeromq");
-
-class ZmqMiddlewareManager {
+export class ZmqMiddlewareManager {
   constructor(socket) {
     // (1)
     this.socket = socket;
@@ -33,7 +31,8 @@ class ZmqMiddlewareManager {
   use(middleware) {
     // (4)
     if (middleware.inbound) this.inboundMiddleware.push(middleware.inbound);
-    if (middleware.outbound) this.outboundMiddleware.push(middleware.outbound);
+    if (middleware.outbound)
+      this.outboundMiddleware.unshift(middleware.outbound);
   }
 
   async executeMiddleware(middlewares, initialMessage) {
