@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Relin404/Node.js-Design-Patterns-(Third-Edition).git"
+    "url": "git+https://github.com/Relin404/Node.js-Design-Patterns-Third-Edition.git"
   },
   "keywords": [
     "Node.js",
     "Design Patterns",
     "Book"
   ],
-  "homepage": "https://github.com/Relin404/Node.js-Design-Patterns-(Third-Edition)#readme",
+  "homepage": "https://github.com/Relin404/Node.js-Design-Patterns-Third-Edition#readme",
   "author": "",
   "license": "ISC"
 }
